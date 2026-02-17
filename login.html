@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Remixicon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+</head>
+
+<body class="bg-white min-h-screen font-[font-mycustom] justify-center pt-2">
+  <main class="grid grid-cols-1">
+
+    <!-- FORM -->
+    <section class="relative flex items-center justify-center min-h-screen px-8">
+      <div class="w-full max-w-6xl fade-in text-center">
+
+        <!-- MOBILE -->
+        <div class="grid grid-cols-1 md:grid-cols-1">
+          <div class="mx-auto max-w-md">
+
+            <!-- Heading -->
+            <header class="mb-8 pb-3">
+              <h1 class="text-4xl font-extrabold text-black leading-tight">
+                Hello, Oatside Buddy!
+              </h1>
+              <p class="text-gray-400 mt-2">
+                Access your account and enjoy oat goodness.
+              </p>
+            </header>
+
+            <!-- Form -->
+            <form class="space-y-5 text-left relative">
+
+              <!-- Email -->
+              <div class="flex justify-center">
+                <label for="email" class="sr-only">Email</label>
+                <input id="email" type="email" placeholder="Email" class="w-full px-5 py-3 rounded-full border border-gray-300
+              focus:outline-none focus:ring-2 focus:ring-black
+              transition duration-300">
+              </div>
+
+              <!-- Password -->
+              <div class="flex justify-center relative">
+                <label for="password" class="sr-only">Password</label>
+                <input id="password" type="password" placeholder="Password" class="w-full px-5 py-3 rounded-full border border-gray-300
+              focus:outline-none focus:ring-2 focus:ring-black
+              transition duration-300">
+              </div>
+
+              <!-- Login Button -->
+              <div class="flex justify-center pt-6">
+                <button type="button" id="loginBtn" class="relative overflow-hidden w-full bg-[#CB7941] text-white
+              py-3 rounded-full font-semibold
+              transition duration-300
+              hover:scale-[1.03] active:scale-95">
+                  Login
+                </button>
+              </div>
+
+              <div class="flex justify-center pt-6 text-gray-500">
+                Or Continue With
+              </div>
+
+              <!-- Social -->
+              <div class="flex justify-center gap-5 pt-2">
+                <button>
+                  <i
+                    class="ri-google-fill text-xl bg-gray-100 rounded-full px-3 py-3 hover:bg-gray-200 transition duration-200"></i>
+                </button>
+                <button>
+                  <i
+                    class="ri-apple-fill text-xl bg-gray-100 rounded-full px-3 py-3 hover:bg-gray-200 transition duration-200"></i>
+                </button>
+                <button>
+                  <i
+                    class="ri-facebook-fill text-xl bg-gray-100 rounded-full px-3 py-3 hover:bg-gray-200 transition duration-200"></i>
+                </button>
+              </div>
+
+              <div class="flex justify-center pt-11">
+                <p>
+                  Not a Member?
+                  <a href="register.html" class="underline text-[#487CBC]">
+                    Register Here
+                  </a>
+                </p>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BEAR IMAGE -->
+      <div class="hidden md:block absolute bottom-0 right-0 w-87.5 lg:w-[112.5]">
+        <img src="assets/login-bear.webp" alt="Oatside Bear" class="w-full h-auto">
+      </div>
+
+    </section>
+
+  </main>
+</body>
+
+</html>
