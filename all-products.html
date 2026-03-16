@@ -31,7 +31,7 @@
 
                 <!-- Center -->
                 <div class="flex justify-center">
-                    <img src="/assets/logo-oatside.png" alt="Oatside" class="h-8 object-contain">
+                    <a href="index.html"><img src="/assets/logo-oatside.png" alt="Oatside" class="h-8 object-contain"></a>
                 </div>
 
                 <!-- Right -->
@@ -93,15 +93,29 @@
             <!-- Bottom Menu -->
             <div class="border-t">
                 <ul class="flex justify-center gap-10 py-4 text-sm tracking-wide font-medium">
-                    <li><a href="#" class="hover:opacity-60">OATMILK</a></li>
-                    <li><a href="#" class="hover:opacity-60">CEREAL BAR</a></li>
-                    <li><a href="#" class="hover:opacity-60">NEW PRODUCTS</a></li>
+                    <li><a href="all-products.html" class="hover:opacity-60">OATMILK</a></li>
+                    <li><a href="all-products.html" class="hover:opacity-60">CEREAL BAR</a></li>
+                    <li><a href="all-products.html" class="hover:opacity-60">NEW PRODUCTS</a></li>
                 </ul>
             </div>
 
         </div>
 
     </header>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobileMenu" class="fixed top-0 left-0 h-full w-[75%] bg-white shadow-lg 
+       transform -translate-x-full transition duration-300 
+       md:hidden z-40">
+
+        <div class="p-6">
+            <ul class="space-y-6 text-lg font-medium">
+                <li><a href="all-products.html">OATMILK</a></li>
+                <li><a href="all-products.html">CEREAL BAR</a></li>
+                <li><a href="all-products.html">NEW PRODUCTS</a></li>
+            </ul>
+        </div>
+    </div>
 
     <!-- Heading -->
     <section class="py-20 text-center">
